@@ -42,7 +42,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploy stage"
+                echo "Deploy projektu"
                 sh '''
                 
                 docker build -t irssi-deploy:latest -f ./deploy/Dockerfile .
@@ -53,7 +53,7 @@ pipeline {
 
         stage('Publish') {
             steps {
-                echo "Publish stage"
+                echo "Publikacja projektu"
                 sh '''
                 TIMESTAMP=$(date +%Y%m%d%H%M%S)
                 tar -czf artifact_$TIMESTAMP.tar.gz artifacts

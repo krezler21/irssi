@@ -1,4 +1,4 @@
-FROM fedora:latest as fedora-build-image
+FROM fedora:latest 
 
 RUN dnf install -y git && \
 git clone https://github.com/irssi/irssi
