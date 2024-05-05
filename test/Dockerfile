@@ -1,4 +1,4 @@
-FROM fedora-build-image
+FROM irssi-build:latest
 
 WORKDIR /irssi/build
 
